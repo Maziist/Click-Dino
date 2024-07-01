@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Dino Kids;
+    src: url(/assets/fond/DinoKids.otf);
+}
+@font-face {
+    font-family: LuckyDino;
+    src: url(/assets/fond/LuckyDino.otf);
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+#background-video-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+#background-video-dark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%); 
+}
+
+body { 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family:Dino Kids;
+    
+}
+
+main{
+    height: 70vh;
+    position: relative;
+}
+#dino {
+    width: 130px;
+    position:absolute;
+    cursor: pointer;
+    user-select: none;
+}
+header{
+    text-align: center;
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.562);
+    padding-top: 1%;
+    text-shadow: 0 10px 15px #1d2d5a, 0 40px 60px #020001;
+    letter-spacing:5px;
+}
+button{
+    font-family:LuckyDino;
+}
+#easy{
+    background-color: #a7c957;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+#easy:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#medium{
+    background-color: #ff8500;
+    border-radius: 10px;
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+#medium:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#hard{
+    background-color: red;
+    border-radius: 10px;
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    
+}
+#hard:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#menu{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    gap: 5%;
+}
+#replay{
+    background-color: yellow;
+    border-radius: 10px;
+    color:black;
+    text-align: center;
+    font-size: 20px;
+    padding: 1%;
+    cursor: pointer;
+}
+#enGameScreen{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 9%;
+}
+.volume-control {
+    display: flex;
+    align-items: center;
+}
+
+#volume-slider {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.volume-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.volume-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+} 
+
+footer img{
+    height: 20px;
+}
+.fin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 800px){
+    #score{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+ }
+
+ #menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

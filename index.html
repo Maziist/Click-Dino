@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/darkmood.css">
+    <title>CLICK DINO</title>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video-light" class="light" src="./assets/imgs/fondani.mp4">
+        </video>
+        <video autoplay muted loop id="background-video-dark" class="dark hidden" src="./assets/imgs/dark.mp4">
+        </video>
+    </div>
+    <header>
+        <h1>Dino Click Frenzy: The Ultimate Prehistoric Challenge </h1>
+        <button class="menuItem" id="mute">Muet</button>
+        <input type="range" id="volume-slider" class="volume-slider" min="0" max="100" value="50"></button>
+        <div id="score"></div>
+    </header>
+    <main>
+        <div id="menu">
+            <button onclick="startParty(1)" id="easy">Easy</button>
+            <button onclick="startParty(2)" id="medium">Medium</button>
+            <button onclick="startParty(3)" id="hard">Hard</button>
+        </div>
+        <div id="time"></div>
+        <img onclick="clickDino" id="dino" src="./assets/imgs/dinosaure.png" alt="dino" onmousedown="return false">
+        <div id="enGameScreen">
+            <h2></h2>
+            <p id="scores"></p>
+            <button onclick="replayGame()" id="replay">REJOUER</button>
+        </div>
+    </main>
+    <footer>
+        <audio id="son-type">
+            <source src="./assets/son/pop.mp3" type="audio/mp3">
+            <source src="./assets/son/yoshisisland.mp3" type="audio/mp3">
+        </audio>
+        <div>
+            <div class="fin">
+                <img src="./assets/imgs/copyright.png" alt="copyright">
+                <p> Marina Tacite</p>
+            </div>
+            <div class="switch-container">
+                <label class="switch">
+                    <input id="toggle" type="checkbox">
+                    <span class="slider round test"></span>
+                </label>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
